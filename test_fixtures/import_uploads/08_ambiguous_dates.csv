@@ -1,0 +1,4 @@
+case_id,person_name,jurisdiction,event_date,date_format_note
+SYN-DEL-8001,April Sample,DEL,03/04/2026,ambiguous day/month or month/day
+SYN-DEL-8002,May Sample,DEL,04/05/2026,ambiguous day/month or month/day
+SYN-DEL-8003,Unambiguous Sample,DEL,2026-06-07,ISO reference row

@@ -1,0 +1,4 @@
+case_id,person_name,phone,vehicle,jurisdiction,event_date,crime_type
+SYN-DEL-1001,Arun Vale,9000001001,DL-SYN-1001,DEL,2026-01-12,Fictional fraud
+SYN-DEL-1002,Meera Quill,9000001002,DL-SYN-1002,DEL,2026-02-18,Fictional theft
+SYN-DEL-1003,Dev Rowan,9000001003,DL-SYN-1003,DEL,2026-03-04,Fictional robbery

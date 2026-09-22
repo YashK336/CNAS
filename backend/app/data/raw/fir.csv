@@ -1,0 +1,42 @@
+fir_id,person_id,crime,date,location
+FIR00001,P001,Fraud,2026-06-25,Mumbai
+FIR00002,P001,Organized Crime,2026-06-18,Mumbai
+FIR00003,P002,Cyber Crime,2026-02-06,Delhi
+FIR00004,P002,Cyber Crime,2026-05-18,Delhi
+FIR00005,P003,Cyber Crime,2026-08-01,Bengaluru
+FIR00006,P003,Organized Crime,2026-03-26,Bengaluru
+FIR00007,P003,Organized Crime,2026-01-12,Bengaluru
+FIR00008,P003,Theft,2026-06-13,Bengaluru
+FIR00009,P004,Organized Crime,2026-04-03,Pune
+FIR00010,P004,Organized Crime,2026-01-18,Pune
+FIR00011,P004,Theft,2026-03-25,Pune
+FIR00012,P004,Robbery,2026-07-11,Pune
+FIR00013,P005,Robbery,2026-03-12,Hyderabad
+FIR00014,P005,Cyber Crime,2026-02-05,Hyderabad
+FIR00015,P005,Theft,2026-06-03,Hyderabad
+FIR00016,P005,Robbery,2026-08-08,Hyderabad
+FIR00017,P006,Theft,2026-08-02,Jaipur
+FIR00018,P006,Fraud,2026-03-13,Jaipur
+FIR00019,P006,Organized Crime,2026-05-17,Jaipur
+FIR00020,P007,Organized Crime,2026-04-27,Lucknow
+FIR00021,P007,Cyber Crime,2026-05-06,Lucknow
+FIR00022,P008,Theft,2026-03-12,Chandigarh
+FIR00023,P008,Theft,2026-01-21,Chandigarh
+FIR00024,P008,Organized Crime,2026-07-02,Chandigarh
+FIR00025,P009,Robbery,2026-02-23,Mumbai
+FIR00026,P009,Cyber Crime,2026-03-21,Mumbai
+FIR00027,P009,Fraud,2026-06-13,Mumbai
+FIR00028,P010,Organized Crime,2026-03-22,Delhi
+FIR00029,P010,Theft,2026-06-06,Delhi
+FIR00030,P010,Robbery,2026-08-22,Delhi
+FIR00031,P013,Theft,2026-03-04,Hyderabad
+FIR00032,P014,Fraud,2026-08-27,Jaipur
+FIR00033,P016,Theft,2026-03-18,Chandigarh
+FIR00034,P018,Theft,2026-05-21,Delhi
+FIR00035,P021,Organized Crime,2026-03-11,Hyderabad
+FIR00036,P027,Fraud,2026-06-16,Bengaluru
+FIR00037,P031,Organized Crime,2026-07-17,Lucknow
+FIR00038,P032,Theft,2026-05-17,Chandigarh
+FIR00039,P033,Theft,2026-07-09,Mumbai
+FIR00040,P042,Cyber Crime,2026-04-24,Delhi
+FIR00041,P047,Robbery,2026-06-01,Lucknow

@@ -1,0 +1,300 @@
+@import 'tailwindcss';
+
+/* ---------------------------------------------------------------------------
+   CNAS design tokens
+   Dark investigative workstation palette. Accent colours are restrained and
+   the signal ramp (low -> critical) is reserved for status/risk only.
+--------------------------------------------------------------------------- */
+@theme {
+  /* Surfaces */
+  --color-canvas: #08090b;
+  --color-surface: #0d0f12;
+  --color-surface-raised: #12151a;
+  --color-surface-hover: #171b21;
+  --color-surface-active: #1d222b;
+
+  /* Hairlines */
+  --color-line: #21262e;
+  --color-line-strong: #2f3742;
+
+  /* Foreground */
+  --color-ink: #e7eaee;
+  --color-ink-muted: #98a1ac;
+  --color-ink-faint: #6a727d;
+
+  /* Accent */
+  --color-accent: #4b8df8;
+  --color-accent-hover: #6099f9;
+  --color-accent-muted: #16233a;
+
+  /* Signal ramp - status and risk communication only */
+  --color-signal-low: #3f9d6b;
+  --color-signal-medium: #c3a02f;
+  --color-signal-high: #cd7539;
+  --color-signal-critical: #d24f4f;
+
+  /* Graph canvas dots / minimap — concrete colours React Flow needs. */
+  --color-graph-dot: #1b2028;
+  --color-graph-minimap-mask: #08090bbd;
+
+  /* Tight radii keep panels technical rather than consumer-app soft */
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+  --radius-xl: 6px;
+
+  /* Typography */
+  --font-sans: 'Inter', 'Segoe UI Variable Text', 'Segoe UI', system-ui,
+    -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Cascadia Mono', ui-monospace, SFMono-Regular,
+    Consolas, monospace;
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1.0625rem;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    --scrollbar-thumb: #272d36;
+    --scrollbar-thumb-hover: #353d49;
+    --grid-line: rgb(255 255 255 / 0.016);
+  }
+
+  html[data-theme='light'] {
+    color-scheme: light;
+    --color-canvas: #e6ebf2;
+    --color-surface: #f4f6f9;
+    --color-surface-raised: #fbfcfe;
+    --color-surface-hover: #e8edf4;
+    --color-surface-active: #dce4ee;
+    --color-line: #d4dbe4;
+    --color-line-strong: #bec7d3;
+    --color-ink: #1b2430;
+    --color-ink-muted: #4b5666;
+    --color-ink-faint: #6a7584;
+    --color-accent: #2f74e0;
+    --color-accent-hover: #1f64d0;
+    --color-accent-muted: #dce8f8;
+    --color-signal-low: #2d8a57;
+    --color-signal-medium: #9a7a16;
+    --color-signal-high: #c0561f;
+    --color-signal-critical: #c03939;
+    --color-graph-dot: #c5ced9;
+    --color-graph-minimap-mask: #e6ebf2bd;
+    --scrollbar-thumb: #c5ccd6;
+    --scrollbar-thumb-hover: #aeb6c2;
+    --grid-line: rgb(27 36 48 / 0.06);
+  }
+
+  body {
+    @apply bg-canvas font-sans text-ink antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Single, consistent focus treatment across every interactive element. */
+  :focus-visible {
+    outline: 1px solid var(--color-accent);
+    outline-offset: 1px;
+  }
+
+  ::selection {
+    background-color: var(--color-accent-muted);
+    color: var(--color-ink);
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-canvas);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border: 2px solid var(--color-canvas);
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: var(--color-canvas);
+  }
+}
+
+/* Faint blueprint grid used behind the main work area. */
+@utility grid-texture {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* ---------------------------------------------------------------------------
+   Landing page motion
+   Decorative-only: CSS animations are neutralised by the reduced-motion
+   safety net below; the canvas network backdrop gates its own rAF loop via
+   `usePrefersReducedMotion`.
+--------------------------------------------------------------------------- */
+@keyframes cnas-flow {
+  0% {
+    stroke-dashoffset: 24;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes cnas-pulse-soft {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.35);
+  }
+}
+
+@keyframes cnas-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* One-shot radar-style ping used by the entry overlay only. */
+@keyframes cnas-ring-expand {
+  from {
+    opacity: 0.8;
+    transform: scale(0.55);
+  }
+  to {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+}
+
+/* Horizontal flow indicator for the pipeline connectors. */
+@keyframes cnas-flow-x {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(220%);
+  }
+}
+
+/* Gentle vertical bob — used by small "how it works" stage visuals. */
+@keyframes cnas-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.5px);
+  }
+}
+
+/* Small bar-height breathing for the "analyze" micro-visual. */
+@keyframes cnas-bar-pulse {
+  0%,
+  100% {
+    transform: scaleY(0.55);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+/* Two nodes drifting together and apart — entity-resolution micro-visual.
+   `--dx` is set per-element so the pair moves toward each other. */
+@keyframes cnas-merge {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(var(--dx, 3px));
+  }
+}
+
+/* Radial fade used to soften the network backdrop into the canvas colour
+   at the edges of the hero, avoiding a hard rectangular seam. */
+@utility backdrop-fade {
+  mask-image: radial-gradient(
+    ellipse 78% 62% at 50% 32%,
+    black 45%,
+    transparent 100%
+  );
+}
+
+/* Faint blueprint grid that drifts almost imperceptibly — used sparingly
+   on the landing page only; the dashboard's `grid-texture` stays static. */
+@utility grid-texture-animated {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.02) 1px, transparent 1px);
+  background-size: 34px 34px;
+  animation: cnas-grid-drift 50s linear infinite;
+}
+
+@keyframes cnas-grid-drift {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 34px 34px;
+  }
+}
+
+/* Route-exit fade used by `TransitionLink` when leaving the landing page.
+   The transition lives on `#root` itself (not the class) so the reverse —
+   fading the destination route back in — animates too. */
+#root {
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease;
+}
+
+#root.cnas-route-exit {
+  opacity: 0;
+  transform: scale(0.995) translateY(4px);
+}
+
+/* Brief horizontal scan used by the post-auth unlock overlay. */
+@keyframes cnas-unlock-line {
+  from {
+    opacity: 0;
+    transform: scaleX(0.2);
+  }
+  40% {
+    opacity: 0.8;
+    transform: scaleX(1);
+  }
+  to {
+    opacity: 0;
+    transform: scaleX(1.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

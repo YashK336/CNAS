@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" class="dark" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="CNAS - Criminal Network Analysis System. Analyst workstation for exploring entities, relationships and risk indicators."
+    />
+    <title>CNAS · Criminal Network Analysis System</title>
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem('cnas.theme')
+          if (theme !== 'light' && theme !== 'dark') return
+          var root = document.documentElement
+          root.setAttribute('data-theme', theme)
+          root.style.colorScheme = theme
+          root.classList.toggle('dark', theme === 'dark')
+          var meta = document.querySelector('meta[name="color-scheme"]')
+          if (meta) meta.setAttribute('content', theme)
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

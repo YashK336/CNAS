@@ -1,0 +1,3 @@
+case_id,person_name,jurisdiction,officer_alias,source_device,confidence_note,unmapped_tag
+SYN-DEL-4001,Ravi Flint,DEL,Officer Example,synthetic-device-01,training-only,retain-me
+SYN-DEL-4002,Sana Brook,DEL,Officer Sample,synthetic-device-02,training-only,retain-me-too

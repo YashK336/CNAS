@@ -1,0 +1,5 @@
+case_id,person_name,phone,vehicle,jurisdiction,event_date,crime_type
+SYN-DEL-3001,Nila Moss,,DL-SYN-3001,DEL,2026-04-01,Fictional fraud
+SYN-DEL-3002,Omar Reed,9000003002,,DEL,2026-04-02,Fictional theft
+SYN-DEL-3003,,,,DEL,2026-04-03,Fictional robbery
+,Pia Vale,not-a-phone,,DEL,,

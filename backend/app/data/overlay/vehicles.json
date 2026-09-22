@@ -1,0 +1,37 @@
+[
+  {
+    "person_id": "IMP-0a73e559-0000",
+    "vehicle_no": "DL-SYN-1001",
+    "registered_city": null,
+    "vehicle_type": null,
+    "_import_id": "0a73e559-df49-4dad-bb35-ee03214e2181"
+  },
+  {
+    "person_id": "IMP-0a73e559-0001",
+    "vehicle_no": "DL-SYN-1002",
+    "registered_city": null,
+    "vehicle_type": null,
+    "_import_id": "0a73e559-df49-4dad-bb35-ee03214e2181"
+  },
+  {
+    "person_id": "IMP-0a73e559-0002",
+    "vehicle_no": "DL-SYN-1003",
+    "registered_city": null,
+    "vehicle_type": null,
+    "_import_id": "0a73e559-df49-4dad-bb35-ee03214e2181"
+  },
+  {
+    "person_id": "IMP-ef91f99d-0000",
+    "vehicle_no": "MH-SYN-2001",
+    "registered_city": null,
+    "vehicle_type": null,
+    "_import_id": "ef91f99d-f071-4c7d-ab09-ceaeba0720ad"
+  },
+  {
+    "person_id": "IMP-ef91f99d-0001",
+    "vehicle_no": "MH-SYN-2002",
+    "registered_city": null,
+    "vehicle_type": null,
+    "_import_id": "ef91f99d-f071-4c7d-ab09-ceaeba0720ad"
+  }
+]

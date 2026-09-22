@@ -1,0 +1,28 @@
+{
+  "dataset_name": "synthetic_nested_cnas_records",
+  "schema_version": "fixture-1",
+  "records": [
+    {
+      "Case Number": "SYN-DEL-9001",
+      "Suspect Name": "Tara Finch",
+      "District": "DEL",
+      "Incident Date": "2026-08-01",
+      "source_metadata": {
+        "origin": "synthetic training bundle",
+        "collector": "fixture-generator",
+        "tags": ["nested", "review"]
+      }
+    },
+    {
+      "Case Number": "SYN-DEL-9002",
+      "Suspect Name": "Eli Wren",
+      "District": "DEL",
+      "Incident Date": "2026-08-02",
+      "source_metadata": {
+        "origin": "synthetic training bundle",
+        "collector": "fixture-generator",
+        "tags": ["nested", "provenance"]
+      }
+    }
+  ]
+}

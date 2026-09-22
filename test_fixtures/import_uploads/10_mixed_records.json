@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "case_id": "SYN-DEL-10001",
+      "person_name": "Mira Stone",
+      "phone": "9000010001",
+      "jurisdiction": "DEL",
+      "event_date": "2026-09-01"
+    },
+    {
+      "case_id": "SYN-DEL-10002",
+      "person_name": "Noah Flint",
+      "jurisdiction": "DEL",
+      "crime_type": "Fictional cyber fraud",
+      "analyst_comment": "unknown field retained"
+    },
+    {
+      "case_id": "SYN-DEL-10003",
+      "person_name": "Uma Lake",
+      "phone": "9000010003",
+      "vehicle": "DL-SYN-10003",
+      "jurisdiction": "DEL",
+      "event_date": "09/03/2026",
+      "extra_attributes": {
+        "synthetic_score": 0.42,
+        "review_state": "needs-review"
+      }
+    }
+  ]
+}

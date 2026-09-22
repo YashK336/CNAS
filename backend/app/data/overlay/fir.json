@@ -1,0 +1,128 @@
+[
+  {
+    "fir_id": "FIR-PV-20260917",
+    "person_id": "IMP-f806b65a-0000",
+    "crime": "Theft",
+    "date": "2026-09-17",
+    "location": null,
+    "_import_id": "f806b65a-cd37-4c51-9232-55291139e000",
+    "_ingested_at": "2026-09-17T11:27:35+00:00"
+  },
+  {
+    "fir_id": "SYN-DEL-1001",
+    "person_id": "IMP-0a73e559-0000",
+    "crime": null,
+    "date": "2026-01-12",
+    "location": null,
+    "_import_id": "0a73e559-df49-4dad-bb35-ee03214e2181",
+    "_ingested_at": "2026-09-17T11:31:22+00:00"
+  },
+  {
+    "fir_id": "SYN-DEL-1002",
+    "person_id": "IMP-0a73e559-0001",
+    "crime": null,
+    "date": "2026-02-18",
+    "location": null,
+    "_import_id": "0a73e559-df49-4dad-bb35-ee03214e2181",
+    "_ingested_at": "2026-09-17T11:31:22+00:00"
+  },
+  {
+    "fir_id": "SYN-DEL-1003",
+    "person_id": "IMP-0a73e559-0002",
+    "crime": null,
+    "date": "2026-03-04",
+    "location": null,
+    "_import_id": "0a73e559-df49-4dad-bb35-ee03214e2181",
+    "_ingested_at": "2026-09-17T11:31:22+00:00"
+  },
+  {
+    "fir_id": "SYN-MUM-2001",
+    "person_id": "IMP-ef91f99d-0000",
+    "crime": "Fictional Extortion",
+    "date": "2026-03-12",
+    "location": null,
+    "_import_id": "ef91f99d-f071-4c7d-ab09-ceaeba0720ad",
+    "_ingested_at": "2026-09-17T12:00:11+00:00"
+  },
+  {
+    "fir_id": "SYN-MUM-2002",
+    "person_id": "IMP-ef91f99d-0001",
+    "crime": "Fictional Forgery",
+    "date": "2026-03-18",
+    "location": null,
+    "_import_id": "ef91f99d-f071-4c7d-ab09-ceaeba0720ad",
+    "_ingested_at": "2026-09-17T12:00:11+00:00"
+  },
+  {
+    "fir_id": "SYN-DEL-4001",
+    "person_id": "IMP-d8604de4-0000",
+    "crime": null,
+    "date": null,
+    "location": null,
+    "_import_id": "d8604de4-7be4-4984-9cd8-4c7ef736f760",
+    "_ingested_at": "2026-09-21T06:38:25+00:00"
+  },
+  {
+    "fir_id": "SYN-DEL-4002",
+    "person_id": "IMP-d8604de4-0001",
+    "crime": null,
+    "date": null,
+    "location": null,
+    "_import_id": "d8604de4-7be4-4984-9cd8-4c7ef736f760",
+    "_ingested_at": "2026-09-21T06:38:25+00:00"
+  },
+  {
+    "fir_id": "SYN-DEL-6001",
+    "person_id": "IMP-b1799270-0000",
+    "crime": null,
+    "date": "2026-06-01",
+    "location": null,
+    "_import_id": "b1799270-3d37-4d5f-ac2a-991c0296b95b",
+    "_ingested_at": "2026-09-21T06:41:45+00:00"
+  },
+  {
+    "fir_id": "SYN-DEL-8001",
+    "person_id": "IMP-f1d9eef8-0000",
+    "crime": null,
+    "date": "2026-04-03",
+    "location": null,
+    "_import_id": "f1d9eef8-07aa-4d2a-aa6a-6d9e2e1f9a49",
+    "_ingested_at": "2026-09-21T10:45:09+00:00"
+  },
+  {
+    "fir_id": "SYN-DEL-8002",
+    "person_id": "IMP-f1d9eef8-0001",
+    "crime": null,
+    "date": "2026-05-04",
+    "location": null,
+    "_import_id": "f1d9eef8-07aa-4d2a-aa6a-6d9e2e1f9a49",
+    "_ingested_at": "2026-09-21T10:45:09+00:00"
+  },
+  {
+    "fir_id": "SYN-DEL-8003",
+    "person_id": "IMP-f1d9eef8-0002",
+    "crime": null,
+    "date": "2026-06-07",
+    "location": null,
+    "_import_id": "f1d9eef8-07aa-4d2a-aa6a-6d9e2e1f9a49",
+    "_ingested_at": "2026-09-21T10:45:09+00:00"
+  },
+  {
+    "fir_id": "ADJ-TEST-001",
+    "person_id": "IMP-96b78c10-0000",
+    "crime": null,
+    "date": "2026-09-21",
+    "location": null,
+    "_import_id": "96b78c10-522f-4757-acfb-787007866fed",
+    "_ingested_at": "2026-09-21T10:51:54+00:00"
+  },
+  {
+    "fir_id": "ADJ-TEST-002",
+    "person_id": "IMP-96b78c10-0001",
+    "crime": null,
+    "date": "2026-09-20",
+    "location": null,
+    "_import_id": "96b78c10-522f-4757-acfb-787007866fed",
+    "_ingested_at": "2026-09-21T10:51:54+00:00"
+  }
+]

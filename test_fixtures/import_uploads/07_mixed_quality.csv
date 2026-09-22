@@ -1,0 +1,6 @@
+fir,person,phone,vehicle,ps,date,notes
+SYN-DEL-7001,Good Sample,9000007001,DL-SYN-7001,DEL,2026-07-01,complete synthetic row
+SYN-DEL-7002,,9000007002,DL-SYN-7002,DEL,2026-07-02,missing person intentionally
+SYN-DEL-7003,Bad Phone,not-a-phone,DL-SYN-7003,DEL,2026-07-03,invalid phone intentionally
+SYN-DEL-7004,Whitespace Sample,9000007004,DL-SYN-7004,DEL,2026-07-04,  padded note  
+SYN-DEL-7005,Unknown Date,9000007005,DL-SYN-7005,DEL,not-a-date,date validation case
